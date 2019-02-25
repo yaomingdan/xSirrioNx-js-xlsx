@@ -1,97 +1,39 @@
 {
-  "_from": "github:xSirrioNx/js-xlsx",
-  "_id": "xlsx@0.10.2",
-  "_inBundle": false,
-  "_integrity": "sha1-NEUMB4x7qtdMBIJHuU+kcE06vmQ=",
-  "_location": "/xlsx",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "xSirrioNx/js-xlsx",
-    "rawSpec": "xSirrioNx/js-xlsx",
-    "saveSpec": "github:xSirrioNx/js-xlsx",
-    "fetchSpec": null,
-    "gitCommittish": "master"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "github:xSirrioNx/js-xlsx#755e5611ff2b70ceb25dd486c395f310a24a9cfe",
-  "_spec": "xSirrioNx/js-xlsx",
-  "_where": "D:\\cmdb\\cmdbNode",
-  "author": {
-    "name": "sheetjs"
-  },
-  "bin": {
-    "xlsx": "./bin/xlsx.njs"
-  },
-  "browser": {
-    "node": false,
-    "crypto": false,
-    "stream": false,
-    "process": false,
-    "fs": false
-  },
-  "bugs": {
-    "url": "https://github.com/SheetJS/js-xlsx/issues"
-  },
-  "bundleDependencies": false,
-  "config": {
-    "blanket": {
-      "pattern": "xlsx.js"
-    }
-  },
-  "dependencies": {
-    "adler-32": "~1.0.0",
+	"name": "xlsx",
+	"version": "0.10.2",
+	"author": "sheetjs",
+	"description": "Excel (XLSB/XLSX/XLSM/XLS/XML) and ODS spreadsheet parser and writer (extended to enable read/write of cell formats with xlsx files)",
+	"keywords": [ "excel", "xls", "xlsx", "xlsb", "xlsm", "ods", "office", "spreadsheet" ],
+	"bin": {
+		"xlsx": "./bin/xlsx.njs"
+	},
+	"main": "./xlsx",
+	"dependencies": {
+		"adler-32": "~1.0.0",
     "cfb": "~0.11.1",
     "codepage": "~1.8.0",
     "commander": "~2.9.0",
     "crc-32": "~1.0.2",
     "exit-on-epipe": "~1.0.0",
     "ssf": "~0.9.3"
-  },
-  "deprecated": false,
-  "description": "Excel (XLSB/XLSX/XLS/XML) ODS and other spreadsheet format (CSV/DIF/DBF/SYLK) parser and writer",
-  "devDependencies": {
-    "@sheetjs/uglify-js": "",
-    "@types/commander": "",
-    "@types/node": "",
-    "dtslint": "^0.1.2",
-    "mocha": "",
-    "typescript": "2.2.0",
-    "xlsjs": ""
-  },
-  "engines": {
-    "node": ">=0.8"
-  },
-  "homepage": "http://sheetjs.com/opensource",
-  "keywords": [
-    "excel",
-    "xls",
-    "xlsx",
-    "xlsb",
-    "xlsm",
-    "ods",
-    "csv",
-    "dbf",
-    "dif",
-    "sylk",
-    "office",
-    "spreadsheet"
-  ],
-  "license": "Apache-2.0",
-  "main": "./xlsx",
-  "name": "xlsx",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/SheetJS/js-xlsx.git"
-  },
-  "scripts": {
-    "dtslint": "dtslint types",
-    "pretest": "git submodule init && git submodule update",
-    "test": "make travis"
-  },
-  "types": "types",
-  "version": "0.10.2"
+	},
+	"devDependencies": {
+		"cheerio":"^0.19.0",
+		"mocha":"",
+		"xlsjs":"",
+		"uglify-js":""
+	},
+	"repository": { "type":"git", "url":"git://github.com/SheetJS/js-xlsx.git" },
+	"scripts": {
+		"pretest": "git submodule init && git submodule update",
+		"test": "make test"
+	},
+	"config": {
+		"blanket": {
+			"pattern": "xlsx.js"
+		}
+	},
+	"bugs": { "url": "https://github.com/SheetJS/js-xlsx/issues" },
+	"license": "Apache-2.0",
+	"engines": { "node": ">=0.8" }
 }
